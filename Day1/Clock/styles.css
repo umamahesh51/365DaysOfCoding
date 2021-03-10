@@ -1,0 +1,20 @@
+.clock{
+    align-items: center;
+    font-weight: bolder;
+    font-size: 80px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(212, 33, 197);
+}
+body, html{
+    background-color: black;
+}
+.center{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+.date{
+    color: rgb(189, 58, 25);
+
+}
