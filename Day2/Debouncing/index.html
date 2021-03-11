@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debouncing</title>
+</head>
+
+<body>
+    <h1 class="center"><u>Debouncing Demonstration</u></h1>
+    <h2 class="center">Open Console to see the action</h2>
+    <br>
+    <div class="center">
+        <label for="search-field" id="searh-label"> <h3>Search:</h3>
+        </label>
+        <input type="text" id="search-field" class="textfield" placeholder="start typing to search" onkeyup="search()">
+    </div>
+    <script>
+        let counter = 0;
+        let debounce = (fn, time) => {
+            var timer;
+            return function () {
+                clearTimeout(timer)
+                timer = setTimeout(() => {
+                    fn.apply(this, arguments);
+                }, time)
+            }
+        }
+        function _search() {
+            console.log("API Call ", ++counter); // Sample Function. In Prod we have Scroll Handlers, or Search API, etc.. here
+        }
+        let search = debounce(_search, 300)
+
+        for (var i = 0; i < 10; i++) {
+            search()
+        }
+    </script>
+    <style>
+        .textfield {
+            border: 1px solid;
+            border-radius: 5%;
+            width: 20%;
+            height: 20%;
+        }
+
+        .center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+
+        }
+        body, html{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</body>
+
+</html>

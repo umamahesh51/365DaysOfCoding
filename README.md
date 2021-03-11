@@ -1,5 +1,6 @@
 # 365DaysOfCoding
 I will write code for 365 days. The code will be written in either JS, Java, Angular or React.
 <ol>
-  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day1">Day 1</a></li>
+  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day1">Day 1 (Simple Clock) </a></li>
+  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day2">Day 2 (Debouncing Demonstration)</a></li>
 </ol>
