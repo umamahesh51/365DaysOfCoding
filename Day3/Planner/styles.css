@@ -38,7 +38,7 @@
     width: max-content;
 
 }
-td{
+td,th{
     padding: 5px;
     margin: 5px;
 }
