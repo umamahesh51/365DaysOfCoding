@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="center-column">
+        <h1 class="center">Planner</h1>
+        <table id="task-list" class="tasks">
+            <tr class="task">
+                <td>
+                    Name
+                </td>
+                <td>
+                    Category
+                </td>
+                <td>
+                    Due Time
+                </td>
+            </tr>
+        </table>
+        <div id="my-form" class="special-form">
+            <form id="form" onsubmit="addTask(event)">
+                <table>
+                    <tr>
+                        <td>
+                            Name
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" class="textfield">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Category
+                        </td>
+                        <td>
+                            <select name="category" id="category">
+                                <option value="Office">
+                                    Office Related
+                                </option>
+                                <optgroup label="Personal">
+                                    <option value="Writing">
+                                        Writing
+                                    </option>
+                                    <option value="Reading">
+                                        Reading
+                                    </option>
+                                    <option value="Break">
+                                        Break
+                                    </option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Due Time
+                        </td>
+                        <td>
+                            <input type="time" id="due-time" name="due-time" class="textfield">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit" id="submit" class="btn">Submit</button>
+                        </td>
+                        <td>
+                            <button type="button" id="cancel" class="btn" onclick="closeForm()">Cancel</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <button id="add-task" class="btn center" onclick="showForm()">Add Task</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

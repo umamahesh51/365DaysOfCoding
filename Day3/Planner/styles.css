@@ -1,0 +1,44 @@
+.special-form{
+    display: none;
+    border: lightslategray 1px;
+    margin: 10px;
+}
+.tasks{
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+}
+.container, .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-column{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.btn{
+    background-color: lightblue;
+    border: white 1px solid;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+
+}
+td{
+    padding: 5px;
+    margin: 5px;
+}
