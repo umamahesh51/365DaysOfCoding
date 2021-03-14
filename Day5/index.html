@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throttling</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+
+        <div><label for="throttling-btn">Click his button to Fetch Data With Throttling</label> <input type="button"
+                id="throttling-btn" value="click" onclick="fetchDataWithThrottling()"> </div>
+        <div> <label for="non-throttling-btn">Click this button to Fetch Data Without Throttling</label><input
+                type="button" id="non-throttling-btn" value="click" onclick="fetchDataWithOutThrottling()"> </div>
+    </div>
+
+    <script>
+        let fetchDataWithThrottling = () => throttling(makeAPICall, 1000);
+        let fetchDataWithOutThrottling = () => makeNonThrttlingAPICall()
+        var timeData;
+        function throttling(fun, delay) {
+            if (timeData) {
+                return
+            }
+            timeData = setTimeout(() => {
+                fun()
+                timeData = undefined
+            }, delay)
+        }
+        var counter = 0;
+        function makeAPICall() {
+            console.log("Making API Call. called from Throttling method Count is ", ++counter)
+        }
+        var nonThrottlingCallsCounter = 0
+        function makeNonThrttlingAPICall() {
+            console.log("Making API Call. called from Non Throttling method Count is ", ++nonThrottlingCallsCounter)
+
+        }
+    </script>
+</body>
+
+</html>

@@ -5,4 +5,5 @@ I will write code for 365 days. The code will be written in either JS, Java, Ang
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day2">Day 2 (Debouncing Demonstration)</a></li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day3">Day 3 (Task Planer (In Memory)) </a></li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day4">Day 4 (Task Planer (IndexDB)) </a></li>
+  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day5">Day 5(Throttling Demonstration) </a></li>
 </ol>
