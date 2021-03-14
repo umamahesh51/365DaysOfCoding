@@ -7,9 +7,33 @@ request.onupgradeneeded = e => {
 }
 request.onsuccess = e => {
     console.log("DataBase is Created.")
+    db = e.target.result;
+    loadTasks();
 }
 request.onerror = e => {
     alert("Error while Creating IndexDB. This Application won't work in this Browser. Sorry :)")
+}
+function loadTasks() {
+    if (db == null) {
+        alert("DataBase is not created, can't load existing tasks")
+        return;
+    }
+    var readTx = db.transaction('MyTasks', 'readonly');
+    var myTasksStore = readTx.objectStore('MyTasks');
+    let tasks = document.getElementById("task-list")
+    myTasksStore.openCursor().onsuccess = e => {
+        var cursor = e.target.result;
+        if (cursor) {
+            if (tasks.style.display == '') {
+                tasks.style.display = 'flex'
+            }
+            var task = createTask(cursor.value.name, cursor.value.category, cursor.value.dueTime)
+            tasks.tBodies[0].appendChild(task);
+            cursor.continue();
+        } else {
+            console.log('All Tasks are displayed.');
+        }
+    }
 }
 
 class Task {
@@ -25,29 +49,28 @@ function showForm() {
 let addTaskToIndexDB = (name, category, dueTime) => {
     var task = {
         "name": name,
-        "category" : category,
-        "dueTime" : dueTime 
+        "category": category,
+        "dueTime": dueTime
     }
-    const tranSaction = db.transaction('MyTasks', 'readWrite');
-    tranSaction.onerror = e =>{
-        console.log(e.target)
+    const tranSaction = db.transaction('MyTasks', 'readwrite');
+    tranSaction.onerror = e => {
+        alert(e.target)
     }
     const tasks = tranSaction.objectStore('MyTasks')
     tasks.add(task)
-
 }
 function addTask(event) {
-    var formElements = document.getElementById('form').elements;
+    let formElements = document.getElementById('form').elements;
     let name = formElements['name'].value;
     let category = formElements['category'].value
     let dueTime = formElements['due-time'].value
     console.log(name)
-    var tasks = document.getElementById("task-list")
+    let tasks = document.getElementById("task-list")
     if (tasks.style.display == '') {
         tasks.style.display = 'flex'
     }
     var task = createTask(name, category, dueTime);
-    tasks.appendChild(task)
+    tasks.tBodies[0].appendChild(task)
     closeForm()
     addTaskToIndexDB(name, category, dueTime)
     event.preventDefault()
