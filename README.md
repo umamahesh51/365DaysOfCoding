@@ -8,5 +8,7 @@ I will write code for 365 days. The code will be written in either JS, Java, Ang
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day5">Day 5(Throttling Demonstration) </a></li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day6">Day 6(Bind, Apply and call functions) </a></li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day7">Day 7(Polly fill for bind) </a></li>
-  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day8">Day 8(Piano)</a> Inspired by <a href ="https://youtu.be/vjco5yKZpU8">Web Dev Simplified Youtube Channel</a></li>
+  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day8">Day 8(Piano)</a> Inspired by <a href ="https://youtu.be/vjco5yKZpU8">Web Dev Simplified Youtube Channel</a>
+    See <a href= "https://umamahesh51.github.io/Piano/" >Live Demo</a>
+  </li>
 </ol>
