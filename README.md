@@ -12,4 +12,5 @@ I will write code for 365 days. The code will be written in either JS, Java, Ang
     See <a href= "https://umamahesh51.github.io/Piano/" >Live Demo</a>
   </li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day9">Day 9(Live Scores using Cric API) [Incomplete]</a></li>
+  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day10">Day 10 (Easy Ds Question) </a></li>
 </ol>
