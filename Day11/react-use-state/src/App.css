@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.task {
+  display: inline;
+  position: absolute;
+  border: 1px solid #fff;
+  width: auto;
+  height: 20px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+.task{
+  padding: 2px;
+  margin: 2px;
+}
+.task-name.active{
+  text-decoration: line-through;
+}
