@@ -1,5 +1,7 @@
 # 365DaysOfCoding
+
 I will write code for 365 days. The code will be written in either JS, Java, Angular or React.
+
 <ol>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day1">Day 1 (Simple Clock) </a></li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day2">Day 2 (Debouncing Demonstration)</a></li>
@@ -18,4 +20,5 @@ I will write code for 365 days. The code will be written in either JS, Java, Ang
  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day13">Day 13 (Working With Firebase) </a></li>
  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day14">Day 14 (Trapped Rain water problem using two arrays left, right max arrays) </a></li>
 <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day15">Day 15 (Trapped Rain water problem using two arrays left, right max pointers) </a></li>
-</ol> 
+<li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day16">Day 16 (Objects in js, currying in js) </a></li>
+</ol>
