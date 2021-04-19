@@ -15,7 +15,7 @@ I will write code for 365 days. The code will be written in either JS, Java, Ang
   </li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day9">Day 9(Live Scores using Cric API) [Incomplete]</a></li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day10">Day 10 (Easy Ds Question) </a></li>
-  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day11">Day 11 (reat use state example) </a></li>
+  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day11">Day 11 (react use state example) </a></li>
   <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day12">Day 12 (Merge Overlapping Intervals Ds Problem) </a></li>
  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day13">Day 13 (Working With Firebase) </a></li>
  <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day14">Day 14 (Trapped Rain water problem using two arrays left, right max arrays) </a></li>
