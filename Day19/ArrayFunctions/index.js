@@ -13,9 +13,11 @@ var uma = new Person("Uma", 1);
 var pavan = new Person("Pavan", 2);
 var myPersonArray = [uma, pavan];
 
-/* Splice */
-console.log(myArray.splice(0, 2)); // To remove Elements starting from an index to specified number
-console.log(myArray); // Now the Array don't have elements from 0, 1 indexes
+/* Slice */
+// Returns a new Array containing elements from start to end Index (End index is exclusive)
+console.log("Before Slicing: ", myArray);
+console.log(myArray.slice(0, 2)); // To remove Elements starting from an index to specified number
+console.log("After Slicing: ", myArray); // Now the Array don't have elements from 0, 1 indexes
 
 /* Push */
 myArray.push("a");
@@ -71,6 +73,7 @@ console.log(myArray.findIndex((a) => a.charCodeAt(0) > 100));
 console.log(
   myPersonArray.findIndex((a) => a.name.endsWith("a") || a.name.startsWith("P"))
 );
+console.log("Index Of: ", myArray.indexOf("b"));
 
 console.log(
   myPersonArray.findIndex((a) => a.name.endsWith("a") && a.name.startsWith("P"))
