@@ -26,4 +26,6 @@ I will write code for 365 days. The code will be written in either JS, Java, Ang
 <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day19">Day 19 (Array functions in js) </a></li>
 <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day20">Day 20 (Array Functions in js) </a></li>
 <li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day21">Day 21 (Responsive NavBar in js using FlexBox) </a></li>
+<li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day22">Day 22 (Responsive NavBar in js using FlexBox) </a></li>
+<li><a href = "https://github.com/umamahesh51/365DaysOfCoding/tree/main/Day22">Day 21 (Responsive NavBar in js using FlexBox) </a></li>
 </ol>

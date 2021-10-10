@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #555;
+}
+.shape {
+  width: 5rem;
+  height: 5rem;
+}
+.circle {
+  border-radius: 50%;
+  border: 1px solid;
+}
+.triangle .top {
+  display: flex;
+  flex-direction: row;
+  width: 10rem;
+  height: 10rem;
+  background-color: #000;
+}
+.top .bar {
+  width: 2px;
+  height: 100%;
+}
